@@ -69,3 +69,30 @@ nums2 = [2]
 基本思路：
 
 比较x的一半数字，所以不需要处理溢出。
+
+## Practice238
+
+给定n个整数的数组，其中n> 1，nums返回一个数组输出，使得输出[i]等于除nums [i]之外的所有num的元素的乘积。
+
+ 在O(n)中
+
+ 例如，给出[1,2,3,4]，返回[24,12,8,6]
+ 
+ 这个真的很难想通
+ 
+ 所给答案解：
+     
+       public int[] productExceptSelf(int[] nums) {
+         int[] result = new int[nums.length];
+         for (int i = 0, tmp = 1; i < nums.length; i++) {
+             result[i] = tmp;
+             tmp *= nums[i];
+         }
+         for (int i = nums.length - 1, tmp = 1; i >= 0; i--) {
+             result[i] *= tmp;
+             tmp *= nums[i];
+         }
+         return result;
+     }
+     
+ 
