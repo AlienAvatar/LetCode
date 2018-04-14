@@ -1,5 +1,18 @@
 package letcode;
 
+/**
+ * 计算汉明公式
+ *
+ *
+ * Input: x = 1, y = 4
+
+ Output: 2
+
+ Explanation:
+ 1   (0 0 0 1)
+ 4   (0 1 0 0)
+        ↑   ↑
+ */
 public class Practice461 {
     public int hammingDistance(int x, int y) {
         if(x < 0 || x > 2147483647){

@@ -2,6 +2,9 @@ package letcode;
 
 import java.util.*;
 
+/**
+ * 给定一个整数数组，除了某个元素外其余元素均出现两次。请找出这个只出现一次的元素。
+ */
 public class Practice136 {
     public int singleNumber(int[] nums) {
         if(nums == null){
