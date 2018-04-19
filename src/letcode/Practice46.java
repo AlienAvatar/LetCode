@@ -38,6 +38,7 @@ public class Practice46 {
         List<Integer> l0 = new ArrayList<Integer>();
         l0.add(num[0]);
         ans.add(l0);
+
         for (int i = 1; i< num.length; ++i){
             List<List<Integer>> new_ans = new ArrayList<List<Integer>>();
             for (int j = 0; j<=i; ++j){
@@ -54,6 +55,14 @@ public class Practice46 {
 
     public static void main(String[] args) {
         int[] nums = {1,2,3};
+        List<String> list = new ArrayList<>();
+        list.add("aa");
+        list.add(0,"a");
+        String s = "a";
+        list.remove(0);
+        for(String str : list){
+            System.out.println(str);
+        }
         permute(nums);
     }
 }
